@@ -1,0 +1,3 @@
+#These are the base directory that needs to be created
+mkdir bin code conf data logs out runtime scripts test
+mkdir data/json

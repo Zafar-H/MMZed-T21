@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/projects/common/DatabaseConf/DatabaseConf.iml" filepath="$PROJECT_DIR$/projects/common/DatabaseConf/DatabaseConf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/ErrorEngine/ErrorEngine.iml" filepath="$PROJECT_DIR$/projects/ErrorEngine/ErrorEngine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/common/JSON_Reader/JSON_Reader.iml" filepath="$PROJECT_DIR$/projects/common/JSON_Reader/JSON_Reader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MMZed-T21.iml" filepath="$PROJECT_DIR$/.idea/MMZed-T21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/ValidationEngine/ValidationEngine.iml" filepath="$PROJECT_DIR$/projects/ValidationEngine/ValidationEngine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/common/code/code.iml" filepath="$PROJECT_DIR$/projects/common/code/code.iml" />
+    </modules>
+  </component>
+</project>
