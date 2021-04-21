@@ -1,55 +1,92 @@
 package code.src.classes.system;
 
-import java.util.HashMap;
+import code.src.Exceptions.KeyNotFoundException;
+import code.src.interfaces.IAttributes;
+import code.src.interfaces.IBaseHashMapString;
+import com.google.gson.Gson;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
-public class SystemAttributes {
-    public static HashMap<String, String> systemAttributes = new HashMap();
+import java.util.Set;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
-    private static String STATE;
-    private static String GLOBAL_ERROR_NUMBER;
-    private static String PWD;
-    private static String MODE;
-
-    public static String getSTATE() {
-        return STATE;
+public class SystemAttributes implements IAttributes
+{
+    //public static final Logger logger = LogManager.getLogger(SystemAttributes.class);
+    public Boolean isExists(String key) throws KeyNotFoundException {
+        if(baseHash.containsKey(key))
+        {
+            return true;
+        }
+        else
+            throw new KeyNotFoundException("Key doesn't exist");
     }
 
-    public static void setSTATE(String STATE) {
-        SystemAttributes.STATE = STATE;
+    public String getValue(String key){
+        Boolean  isPresent;
+        try {
+            isPresent = isExists(key);
+
+            if(!isPresent)
+            {
+                // logger.error("Key doesn't exist ");
+                System.exit(100);
+            }
+        } catch (KeyNotFoundException e) {
+            e.printStackTrace();
+        }
+       return (String) baseHash.get(key);
     }
 
-    public static String getGlobalErrorNumber() {
-        return GLOBAL_ERROR_NUMBER;
+
+    public String[] getKeys()
+    {
+        String[] keys = new String[baseHash.keySet().size()];
+
+        return keys;
     }
 
-    public static void setGlobalErrorNumber(String globalErrorNumber) {
-        GLOBAL_ERROR_NUMBER = globalErrorNumber;
+    public void set(String value)
+    {
+
     }
 
-    public static String getPWD() {
-        return PWD;
+    public void set(String key,String value)
+    {
+        try {
+            if(!isExists(key))
+            {
+                System.exit(100);
+            }
+        } catch (KeyNotFoundException e) {
+            e.printStackTrace();
+        }
+        baseHash.put(key,value);
     }
 
-    public static void setPWD(String PWD) {
-        SystemAttributes.PWD = PWD;
+    public void delete(String key)
+    {
+        try {
+            if(isExists(key))
+            {
+                System.exit(100);
+            }
+        } catch (KeyNotFoundException e) {
+            e.printStackTrace();
+        }
+        baseHash.remove(key);
     }
 
-    public static String getMODE() {
-        return MODE;
+    public JSONObject getJSON(IBaseHashMapString object) throws ParseException {
+        Gson gson = new Gson();
+        String jsonString = gson.toJson(object);
+
+        JSONParser parser = new JSONParser();
+        JSONObject jsonObject = (JSONObject) parser.parse(jsonString);
+
+        return jsonObject;
     }
 
-    public static void setMODE(String MODE) {
-        SystemAttributes.MODE = MODE;
-    }
-
-    SystemAttributes() {
-        systemAttributes.put("STATE", STATE);
-        systemAttributes.put("GLOBAL_ERROR_NUMBER", GLOBAL_ERROR_NUMBER);
-        systemAttributes.put("PWD", PWD);
-        systemAttributes.put("MODE", MODE);
-    }
-
-    public static HashMap getSystemAttributes() {
-        return systemAttributes;
-    }
 }
