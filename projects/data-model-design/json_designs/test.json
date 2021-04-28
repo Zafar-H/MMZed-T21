@@ -1,0 +1,274 @@
+{
+	"__common__" : {
+		"__rainy__" : {
+			"tr.01" : {
+				"isEmpty" : {
+					"__test_case_sequence__" : [ ],
+					"tchk.01" : {
+						"pattern" : "Za", 
+						"description" : "testing for not empty condition",
+                     				"status" : {
+                          				"success_code" : "",
+							"error_code" : "",
+							"help_code" : ""
+						}
+					},
+					"tchk.02" : {
+						"pattern" : "", 
+						"description" : "testing for not empty condition",
+                     				"status" : {
+                          				"success_code" : "",
+							"error_code" : "",
+							"help_code" : ""
+						}
+					}
+				}
+			}
+		},
+		"__field__" : {
+			"firstName" : {
+				"default" : {
+
+				},
+				"sunny" : {
+					"__test_cycle_sequence__" : [ ],
+					"ts.01" : {
+								
+					}
+				},
+				"rainy" : {
+					"__test_cycle_sequence__" : [ ],
+					"tr.01" : "__tr.01__",
+					"tr.02" : {
+						"isAlphabetic" : {
+							"__test_case_sequence__" : [],
+							"tchk.01" : {
+								"pattern" : "Za", 
+								"description" : "testing for isAlphabetic condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							},
+							"tchk.02" : {
+								"pattern" : "123", 
+								"description" : "testing for isAlphabetic condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							},
+							"tchk.03" : {
+								"pattern" : "##@Zaf", 
+								"description" : "testing for isAlphabetic condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							}
+						}
+					}
+				},
+				"exit_at_single_error" : "false"
+			},
+			"mobileNumber" : {
+				"default" : {
+
+				},
+				"sunny" : {
+					"__test_cycle_sequence__" : [ ],
+					"ts.01" : {
+								
+					}
+				},
+				"rainy" : {
+					"__test_cycle_sequence__" : [ ],
+					"tr.01" : "__tr.01__",
+					"tr.02" : {
+						"isNumeric" : {
+							"__test_case_sequence__" : [],
+							"tchk.01" : {
+								"pattern" : "Za", 
+								"description" : "testing for isNumeric condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							},
+							"tchk.02" : {
+								"pattern" : "123", 
+								"description" : "testing for isAlphabetic condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							},	
+							"tchk.03" : {
+								"pattern" : "##@Zaf", 
+								"description" : "testing for isAlphabetic condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							}
+						}
+					}
+				},
+				"exit_at_single_error" : "false"
+			},
+			"email" : {
+				"default" : {
+
+				},
+				"sunny" : {
+					"__test_cycle_sequence__" : [ ],
+					"ts.01" : {
+								
+					}
+				},
+				"rainy" : {
+					"__test_cycle_sequence__" : [ ],
+					"tr.01" : "__tr.01__",
+					"tr.02" : {
+						"containsExpectedFormat" : {
+							"__test_case_sequence__" : [],
+							"tchk.01" : {
+								"pattern" : "@gmail.com", 
+								"description" : "testing for 'containsExpectedFormat' condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							},
+							"tchk.02" : {
+								"pattern" : "123@gmail.com", 
+								"description" : "testing for 'containsExpectedFormat' condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							},
+							"tchk.03" : {
+								"pattern" : "##@Zaf.@@#", 
+								"description" : "testing for 'containsExpectedFormat' condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							}	
+						}
+					}
+				},
+				"exit_at_single_error" : "false"
+			}
+		}
+	},
+	"F1" : {
+		"field" : {
+			"firstName" : "__firstName__",
+			"mobileNumber" : "__mobileNumber__",
+			"email" : "__email__"
+		}
+	},
+	"F2" : {
+		"field" : {
+			"firstName" : "__firstName__",
+			"email" : "__email__"
+		}
+	},
+	"F3" : {
+		"field" : {
+			"firstName" : "__firstName__",
+			"email" : "__email__",
+			"mobileNumber" : {
+				"default" : {
+
+				},
+				"sunny" : {
+					"__test_cycle_sequence__" : [ ],
+					"ts.01" : {
+								
+					}
+				},
+				"rainy" : {
+					"__test_cycle_sequence__" : [ ],
+					"tr.01" : "__rainy__",
+					"tr.02" : {
+						"isNumeric" : {
+							"__test_case_sequence__" : [],
+							"tchk.01" : {
+								"pattern" : "Za", 
+								"description" : "testing for isNumeric condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							},
+							"tchk.02" : {
+								"pattern" : "123", 
+								"description" : "testing for isAlphabetic condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							},	
+							"tchk.03" : {
+								"pattern" : "##@Zaf", 
+								"description" : "testing for isAlphabetic condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							}
+						}
+					},
+					"tr.03" : {
+						"isWithinSpecifiedRange" : {
+							"__test_case_sequence__" : [],
+							"tchk.01" : {
+								"pattern" : "12345", 
+								"description" : "testing for isWithinSpecifiedRange condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							},
+							"tchk.02" : {
+								"pattern" : "1234567890", 
+								"description" : "testing for isWithinSpecifiedRange condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							},	
+							"tchk.03" : {
+								"pattern" : "123456789098", 
+								"description" : "testing for isWithinSpecifiedRange condition",
+                     						"status" : {
+                          						"success_code" : "",
+									"error_code" : "",
+									"help_code" : ""
+								}
+							}
+						}
+					}
+				},
+				"exit_at_single_error" : "false"
+			}
+		}
+	}
+}

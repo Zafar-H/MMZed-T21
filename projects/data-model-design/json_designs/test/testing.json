@@ -1,0 +1,40 @@
+{
+	"__COMMON__" : {
+
+	},
+	"__TEST_CASES__" : {
+		"t.01" : {
+			"F1" : {
+				"input" : {
+					"firstName" : {
+						"value" : "zafar",
+						"result" : {
+							"success" : "Valid input",
+							"fail" : {
+								"error_code" : []
+							}
+						}
+					},
+					"mobileNumber" : {
+						"value" : "ABC",
+						"result" : {
+							"success" : "",
+							"fail" : {
+								"error_code" : []
+							}
+						}
+					},
+					"email" : {
+						"value" : "name@gmail.com",
+						"result" : {
+							"success" : "Valid input",
+							"fail" : {
+								"error_code" : []
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

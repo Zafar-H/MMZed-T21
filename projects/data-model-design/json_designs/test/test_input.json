@@ -1,0 +1,30 @@
+{
+	"t.01" : {
+		"F1" : {
+			"firstName" : "",
+			"mobileNumber" : "1234567890",
+			"email" : ""
+		}
+	},
+	"t.02" : {
+		"F1" : {
+			"firstName" : "zafar",
+			"mobileNumber" : "1234567890",
+			"email" : "name@example.com"
+		}
+	},
+	"t.03" : {
+		"F1" : {
+			"firstName" : "123",
+			"mobileNumber" : "1234567890",
+			"email" : "zafargmail.com"
+		}
+	},
+	"t.04" : {
+		"F1" : {
+			"firstName" : "zafar",
+			"mobileNumber" : "1234567ABC",
+			"email" : "zafar@gmail.com"
+		}
+	},
+}
