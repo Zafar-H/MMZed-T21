@@ -8,8 +8,8 @@ public class Test_Common_Error {
     public static void main(String[] args)
     {
         String commonErrorMessagesFile = "/home/zafar/projects/ErrorEngine/data/common_error.json";
-        JSON_FileReader.setFileName(commonErrorMessagesFile);
-        logger.info(JSON_FileReader.getFileName());
+        //JSON_FileReader.setFileName(commonErrorMessagesFile);
+        //logger.info(JSON_FileReader.getFileName());
     }
 
 }

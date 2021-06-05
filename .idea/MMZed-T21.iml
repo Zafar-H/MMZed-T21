@@ -3,10 +3,19 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Utils" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/Base" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/HelpEngine" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/API/Validate" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/MyLogger" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/API" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/common" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/ValidationEngine" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="json-simple-1.1" level="project" />
+    <orderEntry type="library" name="log4j-1.2.17" level="project" />
+    <orderEntry type="module" module-name="ValidationEngine" />
   </component>
 </module>

@@ -1,6 +1,6 @@
 #Java package information are set here 
 JAVA_COMMON_ATTRIBUTES_FILE_NAME=common_attributes.sh
-JAVA_COMMON_ATTRIBUTES_FILE_PATH=$HOME/projects/common/scripts
+JAVA_COMMON_ATTRIBUTES_FILE_PATH=$HOME/MMZed-T21/projects/common/scripts
 
 #Taking java package defaults 
 source /$JAVA_COMMON_ATTRIBUTES_FILE_PATH/$JAVA_COMMON_ATTRIBUTES_FILE_NAME
@@ -26,5 +26,5 @@ PATH=$PATH:$COMMON_JAVA_JAR_DIR:$JASON_PARSER_JAR_DIR
 export CLASSPATH PATH
 
 #Compiling specified java file
-echo "compiling ConstantsDefaults..."
+$ECHO "compiling ConstantsDefaults..."
 $JAVAC $JAVA_FILE_DIR/PropertiesDirectory.java $JAVA_FILE_DIR/Test_PropertiesDirectory.java

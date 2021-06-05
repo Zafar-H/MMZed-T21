@@ -1,6 +1,6 @@
 #Java package information are set here
 JAVA_COMMON_ATTRIBUTES_FILE_NAME=common_attributes.sh
-JAVA_COMMON_ATTRIBUTES_FILE_PATH=$HOME/projects/common/scripts
+JAVA_COMMON_ATTRIBUTES_FILE_PATH=$HOME/MMZed-T21/projects/common/scripts
 
 #Taking java package defaults
 source /$JAVA_COMMON_ATTRIBUTES_FILE_PATH/$JAVA_COMMON_ATTRIBUTES_FILE_NAME

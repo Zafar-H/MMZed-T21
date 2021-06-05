@@ -1,6 +1,7 @@
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -40,16 +41,37 @@ public class JSON_FileReader {
         return jsonFormat;
     }
 
+    public static Boolean checkJsonFile(String fileName) throws IOException, ParseException {
+        try
+        {
+            setFileName(fileName);
+            JSONParser parser = new JSONParser();
+            Object parsedFile = parser.parse( new FileReader( getFileName() ) );
+            JSONObject jsonObject = (JSONObject) parsedFile;
+        }
+        catch (ParseException ex)
+        {
+            try {
+                setFileName(fileName);
+                JSONParser parser = new JSONParser();
+                Object parsedFile = parser.parse( new FileReader( getFileName() ) );;
+                JSONArray jsonObject = (JSONArray) parsedFile;
+            } catch (ParseException ex1) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void resetData() throws FileNotFoundException {
         PrintWriter writer = new PrintWriter( getFileName() );
         writer.print("");
         writer.close();
-
     }
 
     public static final Logger logger = LogManager.getLogger( JSON_FileReader.class );
 
-    public static void main(String[] args) /*throws IOException, ParseException*/
+    public static void main1(String[] args) throws IOException, ParseException
     {
 
     }

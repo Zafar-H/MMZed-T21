@@ -2,7 +2,8 @@
   <library name="json-simple-1.1">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/projects/common/JSON_Reader/code/jars/json-simple-1.1.jar!/" />
-      <root url="jar://$USER_HOME$/Downloads/gson-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Downloads/gson-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/projects/ValidationEngine/code/jars/regex.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
