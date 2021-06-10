@@ -1,25 +1,70 @@
 package code.src.BaseAttributes.system;
 
 
+import code.src.BaseAttributes.system.interfaces.ISystemAttributes;
+
 import java.util.HashMap;
 
-public class SystemKeys {
-    public static HashMap systemKeys = new HashMap();
+public class SystemKeys implements ISystemAttributes {
 
-    public static HashMap<String, HashMap> GLOBAL_FINAL_ATTRIBUTES = new HashMap();
 
-    public static void setGlobalFinalAttributes(HashMap globalFinalAttributes) {
+    @Override
+    public HashMap<String, Object> getMap() {
+        return null;
+    }
 
+    @Override
+    public void setMap(HashMap<String, Object> map) {
 
     }
 
-    SystemKeys() {
-        systemKeys.put("GLOBAL_FINAL_ATTRIBUTES", GLOBAL_FINAL_ATTRIBUTES);
+    @Override
+    public Boolean isSingleKeyExist(String key) {
+        return null;
+    }
+
+    @Override
+    public HashMap<String, Boolean> isMultipleKeyExist(HashMap<String, String> keySetMap) {
+        return null;
+    }
+
+    @Override
+    public String getSingleKey(String key) {
+        return null;
+    }
+
+    @Override
+    public HashMap<String, Object> getMultipleKey(HashMap<String, String> keySetMap) {
+        return null;
+    }
+
+    @Override
+    public void setSingleKey(String key, Object value) {
 
     }
 
+    @Override
+    public void setMultipleKey(HashMap<String, Object> keySetMap) {
 
-    public static HashMap getSystemKeys() {
-        return systemKeys;
+    }
+
+    @Override
+    public void deleteSingleKey(String key) {
+
+    }
+
+    @Override
+    public void deleteMultipleKey(HashMap<String, String> keySetMap) {
+
+    }
+
+    @Override
+    public void updateSingleKey(String key, Object value) {
+
+    }
+
+    @Override
+    public void updateMultipleKey(HashMap<String, Object> keySetMap) {
+
     }
 }

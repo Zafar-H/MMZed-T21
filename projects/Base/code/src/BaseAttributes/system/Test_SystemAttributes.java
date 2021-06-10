@@ -15,8 +15,8 @@ public class Test_SystemAttributes {
         PropertyConfigurator.configure(log4jPropertiesFile);
         //BasicConfigurator.configure();
         SystemAttributes obj = new SystemAttributes();
-        String keys = obj.getKeyValue("__STATE");
-        logger.info(" value of  State is : " + keys );
+        //String keys = obj.getKeyValue("__STATE");
+        //logger.info(" value of  State is : " + keys );
         //System.out.println(" value of  State is : " + keys );
     }
 }

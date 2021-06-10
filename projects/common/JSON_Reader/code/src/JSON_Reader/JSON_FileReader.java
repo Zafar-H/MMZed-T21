@@ -70,9 +70,4 @@ public class JSON_FileReader {
     }
 
     public static final Logger logger = LogManager.getLogger( JSON_FileReader.class );
-
-    public static void main1(String[] args) throws IOException, ParseException
-    {
-
-    }
 }

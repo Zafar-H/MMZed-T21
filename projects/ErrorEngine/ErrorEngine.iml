@@ -11,5 +11,6 @@
     <orderEntry type="library" name="json-simple-1.1" level="project" />
     <orderEntry type="library" name="log4j-1.2.17" level="project" />
     <orderEntry type="module" module-name="MMZed-T21" />
+    <orderEntry type="module" module-name="JSON_Reader" />
   </component>
 </module>

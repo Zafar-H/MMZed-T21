@@ -18,7 +18,7 @@
 ####Directory Structure
 * common
    * interfaces
-   * classes
+   * AttributeControllers
    * code
       * compiled_classes
       * jars
@@ -42,7 +42,7 @@
       * updateKey()
 2. ICommonAttributes
    * definition : Specifies common attributes used for tracking information about processes.
-   * path : common -> classes
+   * path : common -> AttributeControllers
    * Attributes
       * systemAttributes of type SystemAttributes
       * controller of type Controller
@@ -67,7 +67,7 @@
 ####Directory Structure
 * ValidationEngine
    * code
-      * classes
+      * AttributeControllers
       * jars
       * src
          * exceptions

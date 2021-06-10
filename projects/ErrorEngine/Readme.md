@@ -18,11 +18,11 @@ Engine is created with :
 
 ##Illustrations
 Class definition
-1. Error
+1. MMZed_ErrorEngine
     * Attributes :
         * errorMap
-            * key - Error code
-            * value - Error data
+            * key - MMZed_ErrorEngine code
+            * value - MMZed_ErrorEngine data
     * Constructor :
         * 
     * methods :
@@ -41,8 +41,8 @@ Class definition
 2. ErrorType
     * Attributes :
         * errorTypeMap
-            * key - Error type
-            * value - Error type data
+            * key - MMZed_ErrorEngine type
+            * value - MMZed_ErrorEngine type data
     * Constructor :
         *
     * methods :
@@ -61,8 +61,8 @@ Class definition
 3. ErrorTypeCode
     * Attributes :
         * errorTypeCodeMap
-            * key - Error type code
-            * value - Error type code data
+            * key - MMZed_ErrorEngine type code
+            * value - MMZed_ErrorEngine type code data
     * Constructor :
         *
     * methods :
@@ -81,8 +81,8 @@ Class definition
 4. ErrorMessage
     * Attributes :
         * errorMessageMap
-            * key - Error message type
-            * value - Error message
+            * key - MMZed_ErrorEngine message type
+            * value - MMZed_ErrorEngine message
     * Constructor :
         *
     * methods :
